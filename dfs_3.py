@@ -10,6 +10,7 @@ def solution(begin, target, words):
     global min
     answer = min
     return answer
+
 def compare(s1, s2):
     cnt = 0
 
