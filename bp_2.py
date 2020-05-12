@@ -16,7 +16,7 @@ def solution(numbers):
 
     for n in new:
         if n < 2:
-            pass
+            continue
         elif n == 2:
             answer += 1
         else:
