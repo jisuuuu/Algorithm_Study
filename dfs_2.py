@@ -1,3 +1,5 @@
+#네트워크
+
 def solution(n, computers):
     answer = 0
     visited = []
