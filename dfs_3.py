@@ -1,6 +1,5 @@
 min = 0
 def solution(begin, target, words):
-    answer = 0
     visited = [0 for i in range(0, len(words))]
 
     for i in range(len(words) - 1, 0, -1):
