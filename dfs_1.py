@@ -10,12 +10,7 @@ def solution(numbers, target):
 def dfs(numbers, target, idx):
     global answer
     if idx == len(numbers):
-        sum = 0
-
-        for n in numbers:
-            sum += n
-
-        if sum == target:
+        if sum(numbers) == target:
             answer += 1
         return
 
