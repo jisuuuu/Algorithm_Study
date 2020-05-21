@@ -10,6 +10,7 @@ def solution(answers):
     pattern2 = [2, 1, 2, 3, 2, 4, 2, 5]
     pattern3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
 
+    #동일한 갯수로 저장된 리스트 묶어주는 zip, 특정 규칙 반복시키는 itertools.cycle
     for p1, p2, p3, a in zip(cycle(pattern1), cycle(pattern2), cycle(pattern3), answers):
         if p1 == a:
             scores[0] += 1
