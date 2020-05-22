@@ -1,6 +1,6 @@
 #타일장식물
 def solution(N):
-    dp = [0 for i in range(0, N)]
+    dp = [0 for _ in range(0, N)]
     dp[0] = 1
     dp[1] = 1
 
