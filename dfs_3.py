@@ -1,14 +1,17 @@
-min = 0
-def solution(begin, target, words):
-    visited = [0 for i in range(0, len(words))]
+#단어 변환
+answer = 0
 
-    for i in range(len(words) - 1, 0, -1):
+
+def solution(begin, target, words):
+    visited = [0 for _ in range(0, len(words))]
+
+    for i in range(0, len(words)):
         if compare(target, words[i]) == 0:
             dfs(begin, words, visited, i, 1)
 
-    global min
-    answer = min
+    global answer
     return answer
+
 
 def compare(s1, s2):
     cnt = 0
@@ -19,13 +22,16 @@ def compare(s1, s2):
 
     return cnt
 
+
 def dfs(now, words, visited, idx, depth):
-    global min
+    global answer
     if compare(now, words[idx]) == 1:
-        if min == 0:
-            min = depth
+        if answer == 0:
+            answer = depth
         else:
-            min = min(min, depth + 1)
+            answer = min(answer, depth + 1)
+
+        return
 
     visited[idx] = 1
 
