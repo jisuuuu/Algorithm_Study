@@ -2,10 +2,7 @@
 
 def solution(n, computers):
     answer = 0
-    visited = []
-
-    for i in range(0, len(computers)):
-        visited.append(False)
+    visited = [False for _ in range(0, n)]
 
     for idx, v in enumerate(visited):
         if v == False:
