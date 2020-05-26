@@ -7,7 +7,7 @@ def solution(m, n, puddles):
         for j in range(1, m + 1):
             if i == 1 and j == 1:
                 continue
-            if [j, i] in puddles:
+            if [j, i] in puddles: # 이차원 배열 dp[y][x]
                 dp[i][j] = 0
             else:
                 dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
