@@ -11,9 +11,9 @@ def solution(clothes):
     cnt = 1
 
     for i in answer.values():
-        cnt *= (i + 1)
+        cnt *= (i + 1) #안 입고 있는 경우 있으니 +1
 
-    return cnt - 1
+    return cnt - 1 # 아예 벗고 있는 경우는 없으니까 -1
 
 
 def solution2(clothes):
