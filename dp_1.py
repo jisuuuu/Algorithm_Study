@@ -1,4 +1,4 @@
-#N으로 표현N으로 표현
+#N으로 표현
 def solution(N, number):
     # 1. [ SET x 8 ] 초기화
     s = [ set() for x in range(8) ]
