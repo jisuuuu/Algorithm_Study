@@ -5,6 +5,7 @@ dx = [1, -1, 0, 0]
 dy = [0, 0, 1, -1]
 cnt = 0
 
+
 def dfs(x, y, matrix, N):
     global cnt
     matrix[x][y] = 0
