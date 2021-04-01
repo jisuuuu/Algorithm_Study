@@ -10,6 +10,5 @@ for _ in range(n):
 
 ans = sorted(ans, key=lambda y: (y[1], y[0])) #다중조건
 
-
 for a in ans:
     print(f'{a[0]} {a[1]}')
