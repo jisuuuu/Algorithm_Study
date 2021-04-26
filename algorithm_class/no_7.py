@@ -1,5 +1,4 @@
 #영어단어 복구
-import math
 
 
 for j in range(1, 6):
@@ -7,7 +6,6 @@ for j in range(1, 6):
     word = f.read()
     word = word.replace(' ', '')
     result = f'{word.lower()}'
-
     f.close()
 
     f = open(f'D:/알고리즘 강의자료/CPS(채점폴더)/7. 영어단어 복구/out{j}.txt', 'r')
