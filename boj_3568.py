@@ -26,7 +26,7 @@ for s in string_list:
 
     for i in range(len(s)):
         if s[i].isalpha():
-            res += s[i]
+            res += s[i] #알파벳의 갯수를 주어지지 않았으므로! 문자열을 다 확인하여 알파벳만 추가
 
     res += ';'
     print(res)
