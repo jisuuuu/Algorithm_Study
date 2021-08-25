@@ -7,7 +7,7 @@ for j in range(n):
     #길이가 계속 반복되면 size = len(word)
 
     for i in range(len(word) // 2):
-        if word[len(word) - i - 1] != word[i]:
+        if word[len(word) - i - 1] != word[i]: # s == s[::-1]
             print(f'#{j + 1} NO')
             break
     else:
