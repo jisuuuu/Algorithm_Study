@@ -4,6 +4,7 @@ import sys
 n = int(input())
 for j in range(n):
     word = input().lower()
+    #길이가 계속 반복되면 size = len(word)
 
     for i in range(len(word) // 2):
         if word[len(word) - i - 1] != word[i]:
