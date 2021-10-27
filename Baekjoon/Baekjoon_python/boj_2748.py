@@ -1,4 +1,4 @@
-#피보나치 수 2
+#피보나치 수2
 import sys
 n = int(sys.stdin.readline().rstrip())
 cache = [0, 1]
