@@ -4,9 +4,9 @@ import sys
 n = int(sys.stdin.readline().rstrip())
 correct_answer = sys.stdin.readline().rstrip()
 
-sanggeun = 'ABCABCABCABC'
-changyoung = 'BABCBABCBABC'
-hyunjin = 'CCAABBCCAABB'
+sanggeun: str = 'ABCABCABCABC'
+changyoung: str = 'BABCBABCBABC'
+hyunjin: str = 'CCAABBCCAABB'
 adrian = bruno = goran = 0
 
 for a, b, g, i in zip(itertools.cycle(sanggeun), itertools.cycle(changyoung), itertools.cycle(hyunjin), correct_answer):
