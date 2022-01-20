@@ -9,6 +9,7 @@ for w in word:
         new.append(w)
     elif 97 <= ord(w) < 123:
         new.append(w)
+
 new = ''.join(new)
 
 if check in new:
