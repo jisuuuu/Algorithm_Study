@@ -7,6 +7,6 @@ while True:
         break
 
     words = [sys.stdin.readline().rstrip() for _ in range(n)]
-    words.sort(key=lambda w : w.lower())
+    words.sort(key=lambda w: w.lower())
 
     print(words[0])
