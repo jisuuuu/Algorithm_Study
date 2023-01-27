@@ -1,3 +1,4 @@
+#모음 제거
 def solution(my_string):
     arr = ['a', 'e', 'i', 'o', 'u']
 
