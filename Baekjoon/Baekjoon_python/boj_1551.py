@@ -4,6 +4,6 @@ n, k = map(int, sys.stdin.readline().rstrip().split())
 a_nums = list(map(int, sys.stdin.readline().rstrip().split(',')))
 
 for _ in range(k):
-    b_nums = [a_nums[i] - a_nums[i - 1] for i in range(1, len(a_nums))]
+    b_nums = [a_nums[i + 1] - a_nums[i] for i in range(len(a_nums) - 1)]
     a_nums = b_nums
-print(*b_nums, sep=',')
+print(*a_nums, sep=',')
